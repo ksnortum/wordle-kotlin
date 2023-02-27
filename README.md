@@ -10,7 +10,7 @@ Any execution method will need [Java 17](https://www.oracle.com/java/technologie
 
 Probably the easiest way to run the app is to create a project in your IDE and run it from there.  A close
 second would be to go to a command line, change directories (folders) to the installation folder and type
-`./wordle.sh` in Linux or `wordle` in Windows.  Otherwise, can build it by issuing this Gradle command in 
+`./wordle.sh` in Linux or `.\wordle` in Windows.  Otherwise, can build it by issuing this Gradle command in 
 the installation directory:
 
 #### Linux
@@ -19,7 +19,7 @@ the installation directory:
 
 #### Windows 
 
-    gradlew build
+    .\gradlew build
 
 Then execute the app with:
 
@@ -29,7 +29,7 @@ Then execute the app with:
 
 #### Windows
 
-    gradlew run -q --console=plain
+    .\gradlew run -q --console=plain
 
 Or you can execute the app using the Java jar file.  From the installation directory, type:
 
