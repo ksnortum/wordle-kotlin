@@ -22,8 +22,8 @@ echo JAVA_HOME ("%JAVA_HOME%") points to an invalid java.exe
 goto fail
 
 :setJarFile
-rem Java was found and works, set jar
-set JAR=build\libs\Wordle-0.1-standalone.jar
+rem Java was found and works, set jar (remember to change the version numbers, see build.gradle.kts)
+set JAR=build\libs\Wordle-0.2-standalone.jar
 if exist "%JAR%" goto execute
 
 rem Build the jar file

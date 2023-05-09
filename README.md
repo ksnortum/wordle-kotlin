@@ -41,7 +41,7 @@ Or you can execute the app using the Java jar file.  From the installation direc
 
     java -jar build\libs\Wordle-x.y-standalone.jar
 
-...where `x` and `y` are the version of the app.
+...where `x` and `y` are the version of the app (see "build.gradle.kts".)
 
 ## Colors
 
@@ -52,10 +52,13 @@ two apart, but is still the color scheme that most people are used to.
 
 ## Dictionary
 
-The dictionary is just a text file called `words.txt` located in `src/main/resources`.  I have a Python program
-in that directory call `build_words.py` that will create the file from `/usr/share/dict/words`.  You can change
-that in the script.
+The dictionary is just a text file called `words.txt` with one word per line located in `src/main/resources`.
+You can also build your own dictionary.  If your system has a text dictionary with on word per line, like
+`/usr/share/dict/words`, there is a Python program in `src/main/resources` called `build_words.py` that will create the
+file from scratch.
 
 One thing that is not easy to do is filter out plurals, so they are left in.  They are not legal in the NYTimes
-version of Wordle, so be aware of that.  Also, the dictionary is not curated at all, so there's words in it that
-would probably be removed NYTimes version.
+version of Wordle, so be aware of that.
+
+The word list is somewhat curated.  It contains no racial slurs that I can find.  Some sensitive words are left in, 
+such as "vulva" and "slave" that would probably never reach the NYTimes.

@@ -11,7 +11,7 @@ class Game {
     private val inputPromptColor = rgb("#61afef")
     private val orange = rgb("#ffa500")
     private val guesses = mutableListOf<String>()
-    private val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    private val alphabet = "abcdefghijklnmopqrstuvwxyz" // "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     private var notUsed = ""
 
     fun play() {
@@ -88,7 +88,6 @@ class Game {
                 continue
             }
 
-            guess = guess.uppercase()
             if (!dictionary.findWord(guess)) {
                 println("Your guess must be a word in the dictionary")
                 continue
@@ -106,15 +105,15 @@ class Game {
 
         for (index in 0..4) {
             if (guess[index] in processedLetters || guess[index] !in wordToGuess) {
-                displayString += noLetter(guess[index])
+                displayString += noLetter(guess[index].uppercaseChar())
                 continue
             }
 
             val indexOfWordToGuess = wordToGuess.indexOf(guess[index])
             displayString += if (index == indexOfWordToGuess) {
-                rightPlace(guess[index])
+                rightPlace(guess[index].uppercaseChar())
             } else if (indexOfWordToGuess > -1) {
-                inWord(guess[index])
+                inWord(guess[index].uppercaseChar())
             } else {
                 // why would we get here?
                 println("ERROR: unexpected else branch in if")
