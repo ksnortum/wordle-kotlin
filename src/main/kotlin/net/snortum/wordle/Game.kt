@@ -7,11 +7,12 @@ import com.github.ajalt.mordant.rendering.TextStyles.*
 
 class Game {
     private val dictionary = Dictionary()
+    @OptIn(com.github.ajalt.mordant.terminal.ExperimentalTerminalApi::class)
     private val t = Terminal()
     private val inputPromptColor = rgb("#61afef")
     private val orange = rgb("#ffa500")
     private val guesses = mutableListOf<String>()
-    private val alphabet = "abcdefghijklnmopqrstuvwxyz" // "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    private val alphabet = "abcdefghijklnmopqrstuvwxyz"
     private var notUsed = ""
 
     fun play() {

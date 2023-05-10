@@ -7,6 +7,7 @@ fun main() {
 }
 
 class Main {
+    @OptIn(com.github.ajalt.mordant.terminal.ExperimentalTerminalApi::class)
     private val t = Terminal()
 
     fun run() {

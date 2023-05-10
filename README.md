@@ -5,8 +5,7 @@ New York Times version of the game, except for the [dictionary](#dictionary).
 
 ## Execution
 
-Any execution method will need [Java 17](https://www.oracle.com/java/technologies/downloads/#java17) and up. 
-(It will work with Java 11 if that's what you have already.)
+Any execution method will need Java 11 and up.
 
 Probably the easiest way to run the app is to create a project in your IDE and run it from there.  A close
 second would be to go to a command line, change directories (folders) to the installation folder and type
