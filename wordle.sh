@@ -15,7 +15,7 @@ else
 fi
 
 # Make sure the version numbers are correct in the Jar file name (see build.gradle.kts)
-JAR=build/libs/Wordle-0.3-standalone.jar
+JAR=build/libs/Wordle-0.4-standalone.jar
 
 # If Jar file doesn't exists, build it
 if [ ! -f $JAR ]; then

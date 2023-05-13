@@ -16,15 +16,16 @@ with open(path, 'r', encoding='utf-8') as f_dictionary:
         words.append(line)
 
 # Words we never want to show up in the dictionary:
+# ***Trigger Warning***  The following words may be offensive or triggering
 sensitive_words = ["fucks", "shits", "cunts", "spiks", "spics", "spick", "kikes", "chink", "gooks", "whore", "sluts",
-                   "negro", "bitch", "vulva", "penis", "slave", "narcs", "narks", "pimps", "rapes"]
+                   "negro", "bitch", "vulva", "penis", "slave", "narcs", "narks", "pimps", "rapes", "fetus", "abort"]
 # ... and probably a lot more I can't think of
 
 # Only five English letters and a LF (how to remove plurals?)
 valid = re.compile(r"^[a-z]{5}\n$")
 new_words = []
 for word in words:
-    if valid.match(word) and word not in sensitive_words:
+    if valid.match(word) and word.rstrip() not in sensitive_words:
         new_words.append(word.lower())
 
 print("Original size:", len(words))

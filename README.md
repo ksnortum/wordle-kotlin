@@ -59,5 +59,5 @@ file from scratch.
 One thing that is not easy to do is filter out plurals, so they are left in.  They are not legal in the NYTimes
 version of Wordle, so be aware of that.
 
-The word list is somewhat curated.  It contains no racial slurs that I can find.  Some sensitive words are left in, 
-such as "vulva" and "slave" that would probably never reach the NYTimes.
+The word list is somewhat curated.  It contains no offensive words or racial slurs that I can think of, but some may
+have gotten past me.

@@ -23,7 +23,7 @@ goto fail
 
 :setJarFile
 rem Java was found and works, set jar (remember to change the version numbers, see build.gradle.kts)
-set JAR=build\libs\Wordle-0.3-standalone.jar
+set JAR=build\libs\Wordle-0.4-standalone.jar
 if exist "%JAR%" goto execute
 
 rem Build the jar file

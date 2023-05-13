@@ -12,7 +12,6 @@ abhor
 abide
 abler
 abode
-abort
 about
 above
 abuse
@@ -374,7 +373,6 @@ birch
 birds
 birth
 bison
-bitch
 bites
 blabs
 black
@@ -692,7 +690,6 @@ chill
 chime
 chimp
 china
-chink
 chino
 chins
 chips
@@ -932,7 +929,6 @@ cuing
 culls
 cults
 cumin
-cunts
 cupid
 curbs
 curds
@@ -1371,7 +1367,6 @@ fetal
 fetch
 feted
 fetid
-fetus
 feuds
 fever
 fewer
@@ -1548,7 +1543,6 @@ froze
 fruit
 frump
 fryer
-fucks
 fudge
 fuels
 fugue
@@ -1702,7 +1696,6 @@ goody
 gooey
 goofs
 goofy
-gooks
 goons
 goose
 gored
@@ -2622,8 +2615,6 @@ names
 nanny
 napes
 nappy
-narcs
-narks
 nasal
 nasty
 natal
@@ -2865,7 +2856,6 @@ penal
 pence
 pends
 penes
-penis
 penny
 peons
 peony
@@ -2910,7 +2900,6 @@ piled
 piles
 pills
 pilot
-pimps
 pinch
 pined
 pines
@@ -3152,7 +3141,6 @@ rangy
 ranks
 rants
 raped
-rapes
 rapid
 rared
 rarer
@@ -3512,7 +3500,6 @@ shire
 shirk
 shirr
 shirt
-shits
 shlep
 shoal
 shock
@@ -3617,7 +3604,6 @@ slaps
 slash
 slate
 slats
-slave
 slays
 sleds
 sleek
@@ -3657,7 +3643,6 @@ slunk
 slurp
 slurs
 slush
-sluts
 slyer
 slyly
 smack
@@ -4410,7 +4395,6 @@ votes
 vouch
 vowed
 vowel
-vulva
 vying
 wacko
 wacks
@@ -4519,7 +4503,6 @@ whits
 whizz
 whole
 whoop
-whore
 whorl
 whose
 wicks
