@@ -61,3 +61,9 @@ version of Wordle, so be aware of that.
 
 The word list is somewhat curated.  It contains no offensive words or racial slurs that I can think of, but some may
 have gotten past me.
+
+## Related Projects
+* https://github.com/ksnortum/find-words-web
+* https://github.com/ksnortum/find-words-java
+* https://github.com/ksnortum/find-words-python
+* https://github.com/ksnortum/wordle-kotlin (this site)
