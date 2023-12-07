@@ -63,7 +63,7 @@ class Game {
 
     private fun displayAll(wordToGuess: String) {
         for (guess in guesses) {
-            displayWordToGuess(guess, wordToGuess)
+            println(displayWordToGuess(guess, wordToGuess))
         }
         println("You are on guess number ${guesses.size}")
         val unusedLetters = notUsed.map { it.toString().uppercase() }.toTypedArray().joinToString(",")
@@ -100,33 +100,32 @@ class Game {
         return guess!!
     }
 
-    private fun displayWordToGuess(guess: String, wordToGuess: String) {
+    fun displayWordToGuess(guess: String, wordToGuess: String): String {
         var displayString = ""
         val processedLetters = mutableListOf<Char>()
 
+        // Look at guess one char at a time
         for (index in 0..4) {
             if (guess[index] in processedLetters || guess[index] !in wordToGuess) {
                 displayString += noLetter(guess[index].uppercaseChar())
                 continue
             }
 
-            val indexOfWordToGuess = wordToGuess.indexOf(guess[index])
-            displayString += if (index == indexOfWordToGuess) {
+            // At this point we know there is a match in the word to guess
+            displayString += if (guess[index] == wordToGuess[index]) {
                 rightPlace(guess[index].uppercaseChar())
-            } else if (indexOfWordToGuess > -1) {
+            } else  {
                 inWord(guess[index].uppercaseChar())
-            } else {
-                // why would we get here?
-                println("ERROR: unexpected else branch in if")
             }
 
+            // Match a char in word to guess only once
             processedLetters.add(guess[index])
         }
 
-        println(displayString)
+        return displayString
     }
 
-    private fun inWord(letter: Char): String = "${(orange + bold)(letter.toString())} "
-    private fun rightPlace(letter: Char): String = "${(green on white + bold)(letter.toString())} "
-    private fun noLetter(letter: Char): String = "${underline(letter.toString())} "
+    fun inWord(letter: Char): String = "${(orange + bold)(letter.toString())} "
+    fun rightPlace(letter: Char): String = "${(green on white + bold)(letter.toString())} "
+    fun noLetter(letter: Char): String = "${underline(letter.toString())} "
 }

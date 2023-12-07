@@ -9,8 +9,8 @@ Any execution method will need Java 11 and up.
 
 Probably the easiest way to run the app is to create a project in your IDE and run it from there.  A close
 second would be to go to a command line, change directories (folders) to the installation folder and type
-`./wordle.sh` in Linux or `.\wordle` in Windows.  Otherwise, can build it by issuing this Gradle command in 
-the installation directory:
+`./wordle.sh` in Linux or `.\wordle.bat` in Windows.  Otherwise, you can build it by issuing this Gradle 
+command in the installation directory:
 
 #### Linux
 
@@ -34,13 +34,11 @@ Or you can execute the app using the Java jar file.  From the installation direc
 
 #### Linux
 
-    java -jar build/libs/Wordle-x.y-standalone.jar
+    java -jar build/libs/Wordle-0.5-standalone.jar
 
 #### Windows
 
-    java -jar build\libs\Wordle-x.y-standalone.jar
-
-...where `x` and `y` are the version of the app (see "build.gradle.kts".)
+    java -jar build\libs\Wordle-0.5-standalone.jar
 
 ## Colors
 
