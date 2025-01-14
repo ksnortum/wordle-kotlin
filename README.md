@@ -43,14 +43,14 @@ Or you can execute the app using the Java jar file.  From the installation direc
 ## Colors
 
 Being red/green colorblind, I am sensitive to the choice of colors.  The NYTimes version of Wordle uses orange and
-green, which are very hard for me to tell apart.  So the letters that are in the right place are still orange, but
-the background is white (or grey on a terminal with a white background.)  This makes it easy for me to tell the
-two apart, but is still the color scheme that most people are used to. 
+green, which are very hard for me to tell apart.  So the letters that are in the right place are still green, but
+the background is white (or grey on a terminal with a white background.)  This makes it easy for me to 
+distinguish the two, but is still the color scheme that most people are used to. 
 
 ## Dictionary
 
 The dictionary is just a text file called `words.txt` with one word per line located in `src/main/resources`.
-You can also build your own dictionary.  If your system has a text dictionary with on word per line, like
+You can also build your own dictionary.  If your system has a text dictionary with one word per line, like
 `/usr/share/dict/words`, there is a Python program in `src/main/resources` called `build_words.py` that will create the
 file from scratch.
 
@@ -65,3 +65,4 @@ have gotten past me.
 * https://github.com/ksnortum/find-words-java
 * https://github.com/ksnortum/find-words-python
 * https://github.com/ksnortum/wordle-kotlin (this site)
+* https://github.com/ksnortum/wordle-python
